@@ -1,3 +1,6 @@
+"Practice: String & Array Methods";
+"Below: JS_3 Assignment: Apna College";
+
 /***** STRING METHOD ******/
 /*
 // 1. Trim Method
@@ -97,25 +100,59 @@ console.log(string1.trim().toUpperCase())
   let arr = [1, 2, 3, 4]
   console.log(arr.reverse())
   
+  // Splice Method
+  let check = ["red", "orange", "green", "blue"];
+  //   let ans = check.splice(2);
+  //  let ans1 = check.splice(2, 2);
+  // let ans2 = check.splice(0, 1, "violet", "skyBlue")
+  console.log("Splice: " + ans2);
+  console.log("Original Array change: " + check);
+  
+  // Using Splice method add mercedes, b/w toyota & xuv
+  let ch = ["toyota", "xuv", "maruti", "bmw"];
+  let ans = ch.splice(1, 0, "mercedes")
+  console.log(ans);
+  console.log(ch)
  */
 
+" ASSIGNMENT JS(Part 3)";
+/*Qs1. Write a JS program to get the first n elements of an array. [n can be any
+positive number].
+For example: for array [7, 9, 0, -2] and n = 3
+Print [7, 9, 0] 
 
-
-
-
-
-/***** ASSIGNMENT JS(Part 3) *****/
-/* 
-let arr = [7,9,0,-2]
-let num = 3
-console.log("First n elements: ", arr.slice(0, num));
+Two ways to solve slice and splice
+*/
+/* solution: 1
+let arr = [7, 9, 0, -2];
+let num = 3;
+//1. Slice
+console.log("Using Slice Method: ", arr.slice(0, num));
+//2. Splice
+arr.splice(3, 1);
+console.log("Using Splice Method", arr);
 */
 
-/* 
+/*
+Qs2. Write a JS program to get the last n elements of an array. 
+For example: for array [7, 9, 0,-2], n = 3
+Print, [9, 0,-2]
+*/
+/* Solution 2:  
 let arr2 = [7, 9, 0, -2]
 
 let num = 3
 console.log("Last n elements: ", arr2.slice(arr2.length-num));
 */
-// let arr = [[2, 3], [{ name: "key" }]];
-// console.log(typeof arr);
+
+
+/* Qs3. Write a JS program to check whether a string is blank or not. */
+/* solution 3
+let stringCheck = prompt("Enter your string!")
+if (stringCheck.length == 0){
+    console.log("Empty")
+} else {
+    console.log("Won")
+}
+*/
+
