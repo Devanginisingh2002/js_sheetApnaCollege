@@ -1,3 +1,5 @@
+'Some Practice Question'
+'Below JS_2 Assignment: Apna College'
 /******** Extra JS QUESTION *********/
 
 // Make a trafic light
