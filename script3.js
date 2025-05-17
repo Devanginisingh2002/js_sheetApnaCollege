@@ -145,7 +145,6 @@ let num = 3
 console.log("Last n elements: ", arr2.slice(arr2.length-num));
 */
 
-
 /* Qs3. Write a JS program to check whether a string is blank or not. */
 /* solution 3
 let stringCheck = prompt("Enter your string!")
@@ -156,3 +155,51 @@ if (stringCheck.length == 0){
 }
 */
 
+/*Qs4. Write a JavaScript program to test whether the character at the given (character)
+index is lower case. */
+
+/* Solution 4: 
+let checkString = "ApnaColleGe"
+let numIndex = 3
+
+if(checkString[numIndex] == checkString[numIndex].toLowerCase()){
+    console.log("LowerCase")
+} else {
+    console.log("Not A Lower Case")
+}
+*/
+
+/* Qs5. Write a JavaScript program to strip leading and trailing spaces from a string. */
+
+/*Solution 5:
+ let string = "  Check          the String    "
+ console.log(string.trim())
+*/
+
+/* Qs6. Write a JavaScript program to check if an element exists in an array or not. */
+
+/*Solution 6:
+Solved in Two ways:
+let arr = [2,3,4,5,6]
+let check = 4 
+let found = false
+'1st Way'
+// if(arr.includes(check)){
+    //     console.log("Found the number")
+    // } else {
+        //     console.log("Not exist", -1)
+        // }
+        '2nd way'
+        for(let i =0; i<arr.length; i++){
+            if(arr[i] === check){
+                found = true
+                break
+            } 
+        }
+        if(found){
+            console.log("Found")
+        } else {
+            console.log("NotFound")
+    }
+    
+*/
