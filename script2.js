@@ -1,6 +1,7 @@
 'Some Practice Question'
 'Below JS_2 Assignment: Apna College'
-/******** Extra JS QUESTION *********/
+
+/* Practice Extra Question */
 
 // Make a trafic light
 /* let color = "yellow";
