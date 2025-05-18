@@ -1,4 +1,5 @@
-"Object & Object Literals";
+"Complete Learnings of JS_5";
+"Assignment JS_5";
 
 /* Ex:1: Accessing the object 
 let student = {
@@ -47,4 +48,112 @@ const obj = {
 // console.log(obj.undefined)  ✅
 */
 
-/* */
+/*Ex: 4 Add/update, Delete value 
+let stu = {
+    name: "Yuvi",
+    Age: 22,
+    marks: 90.4,
+    city: "Noida"
+}
+
+stu.city = "Gurgaon"  // change city
+stu.gender = "Male"   // add new property gender
+stu.marks = "A"       //change marks to 'A'
+
+//Delete Key-pair
+delete stu.city
+console.log(stu)
+*/
+
+/*Ex: 5 Objects of Object: Access, first_letter access of key, Object.keys,values,entries. 
+
+const classInfo = {
+    Alex: {
+        grade: "A+",
+        num: 808
+    }, 
+    Bob: {
+        grade: "A",
+        num: 797
+    },
+    Clark: {
+        grade: "O",
+        num: 626
+    }
+};
+
+console.log(classInfo.Alex.grade)
+console.log(classInfo["Alex"]["num"])
+
+// Access key first letter 'Alex': 'A', Bob -> 'B'
+let firstKey = Object.keys(classInfo)[1]
+console.log(firstKey[0])
+
+
+// Object.keys, Object.values and Object.entries 
+ let checKey = Object.keys(classInfo)
+ console.log(checkey)
+ 
+ let checkValues = Object.values(classInfo)
+ console.log(checkValues)
+ 
+ let checkEntries = Object.entries(classInfo)
+ console.log(checkEntries)
+ */
+
+// Dynamic change's
+/*
+const student = {
+  name: "Devangini",
+  age: 22
+};
+
+let key = "name"; // we can change key as well
+console.log(student[key]); 
+*/
+
+/*Ex: 6 Array of Objects 
+const information = [
+    {
+        name: "Alex",
+        class: "Xth"
+    },
+    {
+        name: "Bob",
+        class: "XIth"
+    },
+    {
+        name: "Franie",
+        class: "XIIth"
+    }
+]
+
+console.log(information[0])
+console.log(information[0].name)
+console.log(information[1].name)
+console.log(information[2].class)
+
+// create new key
+information[0].gender = 'Male'
+console.log(information)
+
+// Using Object, keys, values and Entries
+console.log(Object.keys(information))       
+console.log(Object.values(information))   
+console.log(Object.entries(information))
+*/
+
+/*Ex: 7 Math Object 
+Math properties
+console.log(Math.PI)
+console.log(Math.E)
+
+// Math Method
+console.log(Math.abs(-6))
+console.log(Math.pow(2,4))
+console.log(Math.ceil(3.4))     // up
+console.log(Math.floor(3.4))    // ground
+console.log(Math.round(5.6))    // 5.1 to 5.5 -> 5 and 5.6 to 5.9 -> 6
+console.log(Math.floor((Math.random() * 100) + 1))
+
+*/
