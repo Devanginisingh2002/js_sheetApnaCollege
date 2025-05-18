@@ -157,3 +157,41 @@ console.log(Math.round(5.6))    // 5.1 to 5.5 -> 5 and 5.6 to 5.9 -> 6
 console.log(Math.floor((Math.random() * 100) + 1))
 
 */
+
+"Assignment Js_5";
+/*Qs1. Create a program that generates a random number representing a dice roll.
+[The number should be between 1 and 6].*/
+
+/*Sol:1 
+let num = Math.floor((Math.random()*6)+1)
+console.log(num)
+*/
+
+/*Qs2. Create an object representing a car that stores the following properties for the
+car: name, model, color.
+Print the car’s name.*/
+/*Sol: 2 
+let car = {
+    name: "xuv",
+    mode: "700",
+    color: "white"
+}
+console.log(car.name)
+*/
+
+/*Qs3. Create an object Person with their name, age and city.
+Edit their city’s original value to change it to “New York”. 
+Add a new property country and set it to the United States. */
+
+/*Sol: 3
+
+let Person = {
+    name: "Alex",
+    Age: 29,
+    city: "San"
+}
+
+Person.city = "New York"
+Person.country = "United States"
+console.log(Person)
+*/
