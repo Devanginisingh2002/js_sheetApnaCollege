@@ -149,4 +149,12 @@ class Solution {
     }
 }
 
+Day 55/160 - GfG DSA Series✨
+Mastering Triangles in Arrays! 🔺
+@geeksforgeeks
+ 🥬
+
+Count all possible triangles 🛡️ using array elements as side lengths!
+#gfg160 #geekstreak2025 #DSA #JavaCoding #TwoPointers #twitterblades #PBKSvDC #Spirit #Sunderland #SHINee
+
 
