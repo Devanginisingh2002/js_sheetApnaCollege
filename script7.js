@@ -119,3 +119,34 @@ class Solution {
 }
 
 
+import java.util.Arrays;
+
+class Solution {
+    // Function to count the number of possible triangles.
+    static int countTriangles(int arr[]) {
+        int n = arr.length;
+        Arrays.sort(arr);  // Sort the array
+        int count = 0;
+
+        // Fix the third side one by one (starting from largest)
+        for (int i = n - 1; i >= 2; i--) {
+            int left = 0;
+            int right = i - 1;
+
+            while (left < right) {
+                // If the sum of two smaller sides is greater than the largest side
+                if (arr[left] + arr[right] > arr[i]) {
+                    // Then all elements between left and right form valid triangles with arr[i]
+                    count += right - left;
+                    right--;
+                } else {
+                    left++;
+                }
+            }
+        }
+
+        return count;
+    }
+}
+
+
