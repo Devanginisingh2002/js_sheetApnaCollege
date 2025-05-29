@@ -40,16 +40,13 @@
     console.log(checkfilter);
 */
 
-// let arr = [1,2,3,4];
-// let ch = arr.filter(function(arr) {
-//     return arr / 3;
-// })
-// console.log(ch);
+"Assignment JS_8"
+let arr = [1,2,3,4,5];
+let square = arr.map(arr => arr * arr);
+console.log(square);
 
-
-let arr = [1,2,3,4];
-let ch = arr.filter(function(arr) {
-    return arr % 3;
+// Normal fxn
+let sq = arr.map(function(arr){
+    return arr*arr;
 })
-
-console.log(ch)
+console.log(sq)
