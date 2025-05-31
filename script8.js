@@ -50,3 +50,33 @@ let sq = arr.map(function(arr){
     return arr*arr;
 })
 console.log(sq)
+
+
+
+checkPromoStatus
+
+useEffect(() => {
+  const fetchPromoStatus = async () => {
+    if (!isEnabled('sms_marketing_signup_promo')) {
+      setIsPromoAvailable(null);
+      return;
+    }
+
+    try {
+      const resp = await checkPromoStatus(promoCode);
+      if (resp.non_pending_claim_count > 0) {
+        setIsPromoAvailable(true);
+        applyPromoCode(promoCode, cartLogOptions, '', {
+          sourceFlow: PROMO_SOURCE_TYPE.STANDALONE_APPLY_CODE,
+        });
+      } else {
+        setIsPromoAvailable(false);
+      }
+    } catch (err) {
+      console.error('Error checking promo status', err);
+      setIsPromoAvailable(false);
+    }
+  };
+
+  fetchPromoStatus();
+}, []);
