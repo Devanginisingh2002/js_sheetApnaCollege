@@ -40,43 +40,54 @@
     console.log(checkfilter);
 */
 
-"Assignment JS_8"
-let arr = [1,2,3,4,5];
-let square = arr.map(arr => arr * arr);
-console.log(square);
+/* Reduce Method 
+  let arr_check = [1,2,3,4];
+  let total = arr_check.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+  }, 0)
+  console.log(total)
+*/
 
-// Normal fxn
-let sq = arr.map(function(arr){
-    return arr*arr;
-})
-console.log(sq)
+"Assignment JS_8";
+/* Qs1. Square and sum the array elements using the arrow function and then find the
+average of the array. */
+/* solu: 1 
+  let arr = [1, 2, 3, 4];
+  let square = arr.map((arr) => {
+    return arr * arr;
+  });
+  console.log(square);
 
+  let sum = square.reduce((acc, curr) => {
+    return acc + curr;
+  },0);
+  console.log(sum);
 
+  let avg = sum / arr.length;
+  console.log(avg); 
+*/
 
-checkPromoStatus
+/*Qs2. Create a new array using the map function whose each element is equal to the
+original element plus 5.*/
+/* Solu 2:
+  let arr = [1,2,3,4];
+  console.log(plusFive);
+  var plusFive = arr.map((arr) => {
+    return arr + 5;
+  })    
+*/
 
-useEffect(() => {
-  const fetchPromoStatus = async () => {
-    if (!isEnabled('sms_marketing_signup_promo')) {
-      setIsPromoAvailable(null);
-      return;
-    }
+/*Qs3. Create a new array whose elements are in uppercase of words present in the
+original array.*/
+/*Solu: 3 
+  let arr = ["check", "implementation"];
+  let newArr = arr.map((arr)=>{
+    return arr.toUpperCase();
+  })
+  console.log(newArr)
+*/
 
-    try {
-      const resp = await checkPromoStatus(promoCode);
-      if (resp.non_pending_claim_count > 0) {
-        setIsPromoAvailable(true);
-        applyPromoCode(promoCode, cartLogOptions, '', {
-          sourceFlow: PROMO_SOURCE_TYPE.STANDALONE_APPLY_CODE,
-        });
-      } else {
-        setIsPromoAvailable(false);
-      }
-    } catch (err) {
-      console.error('Error checking promo status', err);
-      setIsPromoAvailable(false);
-    }
-  };
-
-  fetchPromoStatus();
-}, []);
+/*Qs4. Write a function called doubleAndReturnArgs which accepts an array and a
+variable number of arguments. The function should return a new array with the original
+array values and all of the additional arguments doubled.*/
+/*Solu 4 */
