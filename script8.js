@@ -49,24 +49,38 @@
 */
 
 /* Spread Operator 
-*/
-//1. copy
-let arr1 = [1,2,3];
-let arr2 = [...arr1];
-// console.log(arr2);
+  //1. copy
+  let arr1 = [1,2,3];
+  let arr2 = [...arr1];
+  // console.log(arr2);
 
-//2. Merge Array
-let arr3 = [1,2,3];
-let arr4 = [4,5,6];
-let merge = [...arr3, ...arr4];
-// console.log(merge);
+  //2. Merge Array
+  let arr3 = [1,2,3];
+  let arr4 = [4,5,6];
+  let merge = [...arr3, ...arr4];
+  // console.log(merge);
 
-//3. Fxn Arguments
-function sum(a,b,c) {
+  //3. Fxn Arguments
+  function sum(a,b,c) {
     return a+b+c;
+  }
+  let nums = [10,20,30];
+  console.log(sum(...nums));
+*/
+
+/*Rest Operator
+
+*/
+
+//1. Fxn with unknown no. of Arguments
+function sum(...nums){
+  console.log(nums);
+  return nums.reduce((acc, curr) => acc+curr, 0)
+
 }
-let nums = [10,20,30];
-console.log(sum);
+console.log(sum(1,2,3));
+
+//2.
 
 
 // let obj = {
