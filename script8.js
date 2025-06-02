@@ -48,6 +48,38 @@
   console.log(total)
 */
 
+/* Spread Operator 
+*/
+//1. copy
+let arr1 = [1,2,3];
+let arr2 = [...arr1];
+// console.log(arr2);
+
+//2. Merge Array
+let arr3 = [1,2,3];
+let arr4 = [4,5,6];
+let merge = [...arr3, ...arr4];
+// console.log(merge);
+
+//3. Fxn Arguments
+function sum(a,b,c) {
+    return a+b+c;
+}
+let nums = [10,20,30];
+console.log(sum);
+
+
+// let obj = {
+//   name: "Dev",
+//   age: 24,
+//   contact: 808
+// };
+
+// console.log(...obj);
+
+
+
+
 "Assignment JS_8";
 /* Qs1. Square and sum the array elements using the arrow function and then find the
 average of the array. */
@@ -91,3 +123,22 @@ original array.*/
 variable number of arguments. The function should return a new array with the original
 array values and all of the additional arguments doubled.*/
 /*Solu 4 */
+
+
+/*Qs5. Write a function called mergeObjects that accepts two objects and returns a new
+object which contains all the keys and values of the first object and second object.*/
+
+/*Sol 5
+ */
+
+// let obj1 = {
+//   name: "Dev",
+//   Age: 24,
+//   Contact: 808
+// }
+// let obj2 = {
+//   name: "Yuv",
+//   Age: 22,
+//   Contact: 749 
+// }
+// let mergeObj = 
