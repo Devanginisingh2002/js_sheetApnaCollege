@@ -71,3 +71,20 @@ const object = {
 object.method(callBack, 1, 2);
 
 */
+class Solution {
+    Node reverseList(Node head) {
+        Node prev = null;
+        Node curr = head;
+
+        while (curr != null) {
+            Node next = curr.next; // store next node
+            curr.next = prev;      // reverse the link
+            prev = curr;           // move prev to current
+            curr = next;           // move to next node
+        }
+
+        return prev; // new head of reversed list
+    }
+}
+
+
