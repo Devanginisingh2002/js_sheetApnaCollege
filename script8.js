@@ -73,15 +73,13 @@
 */
 
 //1. Fxn with unknown no. of Arguments
-function sum(...nums){
+function sum(...nums) {
   console.log(nums);
-  return nums.reduce((acc, curr) => acc+curr, 0)
-
+  return nums.reduce((acc, curr) => acc + curr, 0);
 }
-console.log(sum(1,2,3));
+console.log(sum(1, 2, 3));
 
 //2.
-
 
 // let obj = {
 //   name: "Dev",
@@ -91,10 +89,7 @@ console.log(sum(1,2,3));
 
 // console.log(...obj);
 
-
-
-
-"Assignment JS_8";
+("Assignment JS_8");
 /* Qs1. Square and sum the array elements using the arrow function and then find the
 average of the array. */
 /* solu: 1 
@@ -138,7 +133,6 @@ variable number of arguments. The function should return a new array with the or
 array values and all of the additional arguments doubled.*/
 /*Solu 4 */
 
-
 /*Qs5. Write a function called mergeObjects that accepts two objects and returns a new
 object which contains all the keys and values of the first object and second object.*/
 
@@ -153,6 +147,12 @@ object which contains all the keys and values of the first object and second obj
 // let obj2 = {
 //   name: "Yuv",
 //   Age: 22,
-//   Contact: 749 
+//   Contact: 749
 // }
-// let mergeObj = 
+// let mergeObj =
+
+function check(a, b) {
+  return a + b;
+}
+let result = check(5, 3);
+console.log(result);
