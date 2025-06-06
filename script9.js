@@ -151,8 +151,3 @@ object which contains all the keys and values of the first object and second obj
 // }
 // let mergeObj =
 
-function check(a, b) {
-  return a + b;
-}
-let result = check(5, 3);
-console.log(result);
